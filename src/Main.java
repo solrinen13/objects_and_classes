@@ -14,7 +14,7 @@ public class Main {
 
 
         deadSeaScrolls.setYearOfPublishing (2021);
-        System.out.println("Год издания" +deadSeaScrolls);
+        System.out.println("Год издания " +deadSeaScrolls.getYearOfPublishing());
 
 
     }

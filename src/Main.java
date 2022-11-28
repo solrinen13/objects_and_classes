@@ -14,6 +14,7 @@ public class Main {
         steppeWolf.getInfoBook ();
         author1.getInfoAuthor();
 
+
         deadSeaScrolls.setYearOfPublishing (2021);
         System.out.println("Год издания " +deadSeaScrolls.getYearOfPublishing());
 

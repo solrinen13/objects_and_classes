@@ -9,6 +9,7 @@ public class Book {
         this.authorFullName = authorFullName;
         this.yearOfPublishing = yearOfPublishing;
 
+
     }
     public void getInfoBook () {
         System.out.print("Книга " + bookName + " авторства " + authorFullName + " имеет " + yearOfPublishing +" год выпуска.");

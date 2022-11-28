@@ -22,11 +22,13 @@ public class Book {
         return authorFullName.getFirstName() + " " + authorFullName.getLastName();
     }
     public int getYearOfPublishing () {
+
         return yearOfPublishing;
     }
     public void setYearOfPublishing(int yearOfPublishing) {
         this.yearOfPublishing = yearOfPublishing;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -37,6 +39,10 @@ public class Book {
     @Override
     public int hashCode() {
         return Objects.hash(bookName, authorFullName);
+    }
 
+    @Override
+    public String toString() {
+        return "Книга " + bookName + " авторства " + authorFullName + " имеет " + yearOfPublishing +" год выпуска.";
     }
 }

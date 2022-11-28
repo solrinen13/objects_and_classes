@@ -41,6 +41,7 @@ public class Book {
         return Objects.hash(bookName, authorFullName);
     }
 
+
     @Override
     public String toString() {
         return "Книга " + bookName + " авторства " + authorFullName + " имеет " + yearOfPublishing +" год выпуска.";

@@ -8,14 +8,18 @@ public class Main {
         Author author2 = new Author("Человеки","");
 
 
+
         Book deadSeaScrolls = new Book("Свитки мертвого моря",author2, -4000); // Используем созданный конструктор
-       deadSeaScrolls.getInfoBook ();
+        deadSeaScrolls.getInfoBook ();
         Book steppeWolf = new Book("Степной волк",author1, 1927); // Повторим
         steppeWolf.getInfoBook ();
         author1.getInfoAuthor();
 
+
         deadSeaScrolls.setYearOfPublishing (2021);
         System.out.println("Год издания " +deadSeaScrolls.getYearOfPublishing());
+
+        System.out.println(deadSeaScrolls);
 
 
     }

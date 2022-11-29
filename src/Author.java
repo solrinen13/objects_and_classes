@@ -1,7 +1,7 @@
 import java.util.Objects;
 public class Author {
-    public String firstNameAuthor;
-    public String lastNameAuthor;
+    private String firstNameAuthor;
+    private String lastNameAuthor;
 
 
 
@@ -23,6 +23,7 @@ public class Author {
         System.out.print("Фамилия автора " + lastNameAuthor + " имя автора " + firstNameAuthor +" книги в наличие " + 1);
         System.out.println("");
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -30,10 +31,12 @@ public class Author {
         Author author = (Author) o;
         return firstNameAuthor.equals(author.firstNameAuthor) && lastNameAuthor.equals(author.lastNameAuthor);
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(firstNameAuthor, lastNameAuthor);
     }
+
     @Override
     public String toString() {
 
